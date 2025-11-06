@@ -1,4 +1,4 @@
-package com.github.caiyu121212.finance.trakcker;
+package com.github.caiyu121212.finance.tracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
