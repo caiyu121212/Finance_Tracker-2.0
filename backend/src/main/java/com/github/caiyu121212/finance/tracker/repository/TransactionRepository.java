@@ -17,6 +17,22 @@ import java.util.Optional;
 /**
  * 交易数据访问接口
  */
-@Reposttory
-public interface  TransactionRepository extends BaseRepository<Transaction, Long>{}
+@Repository
+public interface  TransactionRepository extends BaseRepository<Transaction, Long>{
+    
+    //基础查询方法
+    List<Transaction> findByTransactionDateBetweenAndIsActiveTrue(LocalDate startDate, LocalDate endDate);
+
+    Page<Transaction> findByTransactionDateBetweeenAndIsActiveTrue(LocalDate startDate, LocalDate endDate, Pageable pageable)
+    
+    List<Transaction> findByTypeAndIsActiveTrue(Transaction type);
+
+    List<Transaction> findByCategoryIdAndIsActiveTrue(Long categoryId);
+
+    List<Transaction>findByCategoryIdAndTransactionDateBetweenAndIsActiveTrue(Long categoryId, LocalDate startDate, LocalDate endDate);
+    
+
+
+
+}
  
