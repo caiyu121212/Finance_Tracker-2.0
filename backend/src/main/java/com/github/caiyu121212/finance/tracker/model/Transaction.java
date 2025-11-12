@@ -1,6 +1,6 @@
 package com.github.caiyu121212.finance.tracker.model;
 
-import com.finance.tracker.enums.TransactionType;
+import com.github.caiyu121212.finance.tracker.enums.TransactionType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.math.BigDecimal;
