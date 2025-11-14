@@ -35,5 +35,19 @@ public classs FinancialSummaryDTO{
 
     @Data
     @Builder
+    public static class CategoryExpenseDTO{
+        private String categoryName;
+        private BigDecimal amount;
+        private BigDecimal percentage;
+        private String color;
+    }
     
+    @Data
+    @Builder
+    public static class MonthlyTrendDTO{
+        private String period;
+        private BigDecimal incomg;
+        private BigDecimal expense;
+        private BigDecimal net;
+    }
 }
