@@ -1,4 +1,4 @@
-package com.github.caiyu121212.finance.tracker.repository.java;
+package com.github.caiyu121212.finance.tracker.repository;
 
 import com.github.caiyu121212.finance.tracker.model.Category;
 import com.github.caiyu121212.finance.tracker.model.TransactionType;

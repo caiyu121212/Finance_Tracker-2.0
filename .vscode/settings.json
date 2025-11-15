@@ -1,3 +1,4 @@
 {
-    "scm.compactFolders": false
+    "scm.compactFolders": false,
+    "java.compile.nullAnalysis.mode": "automatic"
 }

@@ -1,4 +1,4 @@
-package com.github.caiyu121212.finnace.tracker.model;
+package com.github.caiyu121212.finance.tracker.model;
 
 import com.github.caiyu121212.finance.tracker.enums.TransactionType;
 import jakarta.persistense.*;

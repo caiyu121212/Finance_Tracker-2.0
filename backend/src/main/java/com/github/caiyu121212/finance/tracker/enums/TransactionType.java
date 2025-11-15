@@ -42,11 +42,11 @@ public enum TransactionType {
      * @return 对应的枚举实例
      */
     public static TransactionType fromValue(String value){
-        for (TransactionType type:value()){
-            if (type.name.equalsIgnoreCase(value)){
+        for (TransactionType type:values()){
+            if (type.name().equalsIgnoreCase(value)){
                 return type;
             }
         }
-        throw new IllegalArgumentException("无效的交易类型："+ value)
+        throw new IllegalArgumentException("无效的交易类型："+ value);
     }
 }
