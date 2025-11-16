@@ -29,6 +29,6 @@ public class TransactionDTO{
 
     //关联信息
     private Long categoryId;
-    private Srting categoryName;
+    private String categoryName;
     private String categoryColor;
 }

@@ -14,17 +14,16 @@ public class InsufficientBudgetException extends BusinessException{
 
     public InsufficientBudgetException(String categoryName, BigDecimal budgetAmount,BigDecimal usedAmount, BigDecimal transactionAmount)
     {
-        super(String.format("Insufficient budget for category '%s'.Budget: %s, Used: %s, Transaction: %s",categoryName.budgetAmount,usedAmount, transactionAmount));
+        super(String.format("Insufficient budget for category '%s'.Budget: %s, Used: %s, Transaction: %s",categoryName,budgetAmount,usedAmount, transactionAmount));
         this.budgetAmount = budgetAmount;
         this.usedAmount = usedAmount;
         this.transactionAmount = transactionAmount;
-
+    }
         //Getters
-        public BigDecimal getBudgetAmount() {return budgetAmount;}
+        public BigDecimal getBudgetAmount() { return budgetAmount;}
         public BigDecimal getUsedAmount() {return usedAmount;}
-        public BigDecimal getTransactionAmount(){ return transactionAmount;}
+        public BigDecimal getTransactionAmount() { return transactionAmount;}
         
     }
 
 
-}

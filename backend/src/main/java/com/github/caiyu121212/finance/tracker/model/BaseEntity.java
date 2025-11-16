@@ -8,11 +8,11 @@ import java.time.LocalDateTime;
  * 所有实体类的父类，包含公共字段
  */
 
-@MappedSuper class
+@MappedSuperclass
 public abstract class BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationTpye.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
 
@@ -37,7 +37,7 @@ public abstract class BaseEntity {
      */
     @PreUpdate
     protected void onUpdate(){
-        this.updateAt = LocalDateTime.now;
+        this.updatedAt = LocalDateTime.now();
     }
 
     //Getters and Setters
@@ -45,7 +45,7 @@ public abstract class BaseEntity {
         this.id = id;
     }
 
-    public void getId(){
+    public long getId(){
         return id;
     }
 
@@ -58,16 +58,16 @@ public abstract class BaseEntity {
     }
 
     public LocalDateTime getUpdatedAt(){
-        return updateAt;
+        return updatedAt;
     }
 
     public void setUpdatedAt(LocalDateTime updatedAt){
-        this.updateAt = updateAt;
+        this.updatedAt = updatedAt;
     }
 
     @Override
     public String toString(){
-        return this.getClass().getSimpleName()+"{"+"id="+id+",createAt="+createAt+",updateAt="+updateAt+
+        return this.getClass().getSimpleName()+"{"+"id="+id+",createAt="+createdAt+",updateAt="+updatedAt+
         "}";
     }
     

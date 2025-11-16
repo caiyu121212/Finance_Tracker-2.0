@@ -1,4 +1,4 @@
-package com.github.caiyu121212.finance.tracker.congfig;
+package com.github.caiyu121212.finance.tracker.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
