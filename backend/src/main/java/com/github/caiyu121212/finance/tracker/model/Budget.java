@@ -1,6 +1,6 @@
 package com.github.caiyu121212.finance.tracker.model;
 
-import jakarta.persistence;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.math.BigDecimal;
 import java.time.YearMonth;
